@@ -1,0 +1,12 @@
+{
+  "credentials": [
+    {
+      "username": "test@test.com",
+      "password": "test1"
+    },
+    {
+      "username": "test2@test.com",
+      "password": "test2"
+    }
+  ]
+}

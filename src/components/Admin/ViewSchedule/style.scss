@@ -1,0 +1,224 @@
+@import "../../../styles/helpers/helpers";
+
+.view-schedule {
+    
+    .create-schedule {
+        .dropdown {
+            .dropdown-toggle.btn.btn-primary {
+                background-color: $color__light;
+                color: $color__dark;
+                font-size: 14px;
+                font-weight: normal;
+                text-align: left;
+                box-shadow: none;
+                border-radius: 0;
+
+                &::after{
+                    right: 12px;
+                    position: absolute;
+                    top: 24px;
+                }
+            } 
+        }
+    }
+   
+   
+    
+    .custom-control-label {
+        list-style: 23px;
+    }
+
+    .border-primary {
+        border: 1px solid $color__primary !important;
+        padding: 11px;
+        background-color: $color__primary;
+        float: right;
+    }
+
+    .card_layout {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .create-schedule {
+        padding: 10px;
+        align-items: flex-start;
+
+        .createbtn {
+            padding: 12px;
+            top:0px;
+            position: relative;
+            width: 100%;
+            min-width: -webkit-fill-available;
+
+            @media only screen and (min-width: $landscapeTablet) {
+                top: 25px;
+            }
+        }
+
+        @media only screen and (min-width: $tablet) {
+            padding: 40px;
+        }
+    }
+
+    .action {
+       margin: 0 auto;
+    width: 215px;
+    }
+
+    .action-icon {
+        margin: 5px;
+    }
+
+    // bootstrap override
+
+    .form-control {
+        border-radius: 0px;
+        font-size: $fontSizeLabel;
+        margin-bottom: 10px;
+        background: $color__light;
+    }
+
+    .table-responsive {
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: $color__background-table;
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: $color__background-white;
+        }
+
+        .table-striped tbody tr {
+            td {
+                border-bottom: 1px solid $color__border-table;
+            }
+        }
+
+
+        table {
+            position: relative;
+            font-size: $fontSizeTable;
+
+            thead {
+                th {
+                    position: sticky;
+                    top: -1px;
+                    min-width: 150px;
+                    box-shadow: 0px 1px 0px 0px $color__border;
+                    color: $color__secondary-dark;
+                    background-color: $color__background-table;
+                    border-top: 1px solid $color__border-table;
+                    border-bottom: none;
+
+                    &:first-child {
+                        min-width: 70px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            tr {
+                td {
+                    vertical-align: middle;
+
+                    .btn {
+                        min-width: 100px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        display: block;
+                        margin-left: 0;
+
+                        &.btn-outline-secondary {
+                            color: $color__background-dark;
+                            border: 1px solid $color__background-dark;
+
+                            &:hover {
+                                color: $color__text-white;
+                                border: 1px solid $color__secondary-dark;
+                            }
+                        }
+                    }
+
+                    &:first-child {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination-wrapper {
+        margin-left: 0px;
+        padding: 5px 0px 5px 0px;
+        .pagination {
+            li {
+                a {
+                    border: 1px solid $color__border-light;
+                    padding: 15px;
+                }
+            }
+
+            .page-link {
+                font-size: 1rem;
+                color: $color__page-link;
+                font-weight: normal;
+            }
+
+            .page-item.active .page-link {
+                background-color: $color__primary;
+                border-color: $color__primary;
+            }
+        }
+
+    }
+
+    .medium-label {
+        font-size: 1.1rem;
+        font-weight: normal;
+        color: $color__page-link;
+    }
+
+    .small-dd {
+        padding: 0.9rem 3.55rem 0.9rem 1rem;
+        color: $color__page-link;
+        border: 1px solid $color__border-light;
+
+        &:focus-visible {
+            outline: 1px solid $color__border-light;
+        }
+    }
+
+    .refresh {
+        border: 1px solid $color__border-light;
+        width: 67px;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.mr-t-20 {
+    margin-top: 20px;
+}
+
+.no-style {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-card-box {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (min-width: 969px) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .btn-card {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,55 @@
+@import "../../../styles/helpers/helpers";
+
+.dashboard-wrapper {
+  padding-left: 0;
+
+  @media only screen and (min-width: 600px) {
+    padding-left: 15px;
+  }
+
+  @mixin cardshadow {
+    background: $color__background-white;
+    box-shadow: 0px 2px 12px rgba(51, 51, 51, 0.25);
+  }
+  @mixin cardsize {
+    width: 485px;
+    height: 334px;
+  }
+
+  .graph-card {
+    @include cardshadow;
+    padding: 40px 115px;
+    .piechart-wrapper {
+      width: 253px;
+      height: 253px;
+    }
+  }
+
+  .line-chart-wrapper,
+  .horizontal-graph-wrapper {
+    @include cardshadow;
+    @include cardsize;
+  }
+
+  .skeleton-wrapper {
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 28px;
+      color: $color__background-dark;
+    }
+  }
+
+  .description {
+    min-width: 485px;
+    .description-wrappper {
+      @include cardshadow;
+    }
+  }
+}
+
+
+.exceptionText {
+  line-height: 48px;
+}

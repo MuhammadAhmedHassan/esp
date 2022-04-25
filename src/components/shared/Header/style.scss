@@ -1,0 +1,265 @@
+@import "../../../styles/helpers/helpers";
+
+.navbar {
+  background-color: $color__primary;
+
+  .alert-fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+    border-radius: 0px;
+  }
+
+  .Down_arrow {
+    background-color: white;
+    height: 30px;
+    // min-width: 25px;
+  }
+
+  .nav-link {
+    border-radius: 50px;
+    width: 45px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+       
+    @media only screen and (min-width: 768px)  {
+      width: 48px;
+    height: 48px;
+    }
+
+    @include transition;
+
+    &:hover,
+    &.active {
+      background-color: $color__secondary-dark;
+    }
+
+    img {
+      max-width: 24px;
+      min-height: 24px;
+    }
+
+    &.btn {
+      min-width: unset;
+
+      &::after {
+        content: none;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    top: calc(100% + 0.5rem);
+    left: unset;
+    right: 0;
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    border: none;
+
+    .navbar-toggler-icon {
+      background-image: url(../../../Images/Icons/icon_burgerMenu_white.svg);
+    }
+  }
+}
+
+.clockIn.btn.btn-primary {
+  background: $color__background-white
+    url(http://localhost:3000/static/media/clock.0ee7d29d.svg) no-repeat 6px
+    center;
+  color: $color__text-black;
+  padding: 5px 5px 5px 40px;
+  min-width: 125px;
+  min-height: 31px;
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0 0 39px;
+  border-radius: 5px;
+  line-height: 0;
+  text-align: right;
+  width: 100%;
+  font-weight: normal;
+  font-size: 13px;
+  box-shadow: none;
+
+  &:not(:disabled):not(.disabled):active {
+    background: $color__background-white
+      url(http://localhost:3000/static/media/clock.0ee7d29d.svg) no-repeat 6px
+      center;
+    color: $color__text-black;
+  }
+
+  &:hover {
+    background: $color__background-white
+      url(http://localhost:3000/static/media/clock.0ee7d29d.svg) no-repeat 6px
+      center;
+    color: $color__text-black;
+  }
+}
+
+.impName {
+  color: $color__text-black;
+  background: $color__background-white;
+  padding: 2px 9px;
+  min-width: 125px;
+  min-height: 31px;
+  border-radius: 5px;
+  line-height: 0;
+  align-items: center;
+  text-align: right;
+  display: flex;
+  font-weight: normal;
+  cursor: pointer;
+  max-width: 122px;
+  min-width: 122px;
+  margin-right: 14px;
+  overflow: hidden;
+  img{
+    width: 11px;
+    margin-right: 5px;
+  }
+  p{
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+}
+
+.delegataName {
+  display: none;
+}
+
+button.clockInMob.mt-2.btn.btn-primary {
+  background: $color__background-white url("../../../Images/Icons/clock.svg")
+    no-repeat 15px center;
+  color: $color__text-black;
+  padding: 5px 5px 5px 40px;
+  min-height: 15px;
+  min-width: 115px;
+  border-radius: 5px;
+  height: 31px;
+  line-height: initial;
+  font-weight: normal;
+  border: 1px solid $color__primary;
+  padding-right: 15px;
+
+  &:not(:disabled):not(.disabled):active {
+    background: $color__background-white url("../../../Images/Icons/clock.svg")
+      no-repeat 15px center;
+    color: $color__text-black;
+  }
+}
+
+.mobileheader {
+  border-bottom: 1px solid #ddd;
+}
+
+.language-select {
+  background-color: $color__background-white;
+  border-radius: 5px;
+  min-width: 110px;
+  height: 31px;
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-weight: normal;
+  font-size: 13px;
+  margin-right: 8px;
+
+   &:hover {
+       cursor: pointer;
+   }
+
+  .language-selector {
+    border: none;
+    position: relative;
+    text-align-last: start;
+    float: right;
+    border-radius: 5px;
+    
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    select {
+      border: 0px;
+      font-weight: $fontWeightBold;
+      color: $color__secondary-dark;
+      background-color: transparent; 
+    }
+
+    .form-control {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      &:focus {
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+
+    .lang--dropdown {
+      min-height: 31px;
+      border: none;
+    }
+  }
+}
+
+
+.SearchBox{
+  background-color: $color__background-white; 
+  margin-right: 15px;
+  border-radius: 4px;
+  input{
+    background-color: none; border: none;
+    max-height: 30px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .input-group-text{
+    background-color: transparent; border: none;
+  }
+  @media only screen and (min-width: 620px) and (max-width: 1037px)  {
+    min-width: 150px;
+    max-width: 150px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 480px)  {
+    min-width: 80px;
+    max-width: 80px;
+    width: 100%;
+  }
+}
+
+
+// Spl media query for top header n nav settings
+
+// #wrapper {
+//   padding-top: 57px;
+//   @media only screen and (min-width: 620px) and (max-width: 767px)  {
+//     padding-top: 11px;
+//   }
+//   @media only screen and (min-width: 767px)  {
+//     padding-top: 111px;
+//   }
+//   @media only screen and (min-width: 905px) and (max-width: 927px)  {
+//     padding-top: 112px;
+//   }
+//   @media only screen and (min-width: 928px)  {
+//     padding-top: 67px;
+//   }
+// }

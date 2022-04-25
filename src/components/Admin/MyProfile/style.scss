@@ -1,0 +1,98 @@
+@import "../../../styles/helpers/helpers";
+
+.avtarOuter {
+   
+    justify-content: center;
+    flex-direction: column;
+    @media only screen and (min-width: 992px) {
+        display: flex;
+        align-items: left;
+    }
+
+    .profileInfo {
+        
+        margin-left: 0px;
+            margin-top: 20px;
+    }
+
+    .profilePic {
+        border-radius: 5px;
+        overflow: hidden;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    h4 {
+        font-size: 23px;
+        line-height: 33px;
+        margin-bottom: 0px;
+    }
+
+    p {
+        font-size: 16px;
+        color: $color__primary;
+        line-height: 20px;
+    }
+
+    
+}
+
+.changePassBtn {
+    background-color: $color__primary;
+    border-radius: 0px;
+}
+
+.myProfile_comp {
+    h2 {
+        font-size: 19px;
+        line-height: 26px;
+        font-weight: 700;
+        color: $color__text-dark;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        display: flex;
+        span {
+            font-weight: 400;
+            min-width: 50%;
+            max-width: 50%;
+        }
+    }
+
+    .MyProfileOuter {
+        border-bottom: 1px solid $color__border;
+        padding: 0 0 48px 0;
+        margin-bottom: px;
+
+        .profileRight {
+            display: flex;
+            align-items: center;
+            min-height: auto;
+            justify-content: center;
+
+            @media only screen and (min-width: 992px) {
+            justify-content: flex-end;
+            min-height: 150px;
+            }
+        }
+    }
+
+    .personalDetails {
+        border: none;
+        padding-top: 30px;
+
+        @media only screen and (min-width: 992px) {
+           border-right: 1px solid $color__border;
+        }
+    }
+
+    .profDetails {
+        padding-top: 30px;
+    }
+}

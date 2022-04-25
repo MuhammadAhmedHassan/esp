@@ -1,0 +1,52 @@
+@import "../../../../../styles/helpers/helpers";
+.overTime {
+  input.rmdp-input {
+    width: 170px;
+    border-radius: 10px;
+    min-height: 40px;
+  }
+  .rmdp-calendar {
+    background-color: $color__background-white;
+  }
+  .overtimeBtn {
+    min-width: 130px;
+  }
+
+  .acceptBtn {
+    display: flex;
+    justify-content: center;
+    margin: 37px 0px;
+  }
+
+  .checkBtn {
+    white-space: nowrap;
+  }
+
+  .overtimeLabel {
+    margin-top: 7px;
+    font-size: $fontSizeLabel;
+    margin-right: 10%;
+  }
+  .overtimeInput {
+    width: 170px;
+    border-radius: 10px;
+  }
+}
+
+.star {
+  font-size: 20px;
+}
+
+.react-datepicker__input-container {
+  width: inherit;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.validation_message {
+  position: absolute;
+  left: 20px;
+  font-size: 14px;
+}

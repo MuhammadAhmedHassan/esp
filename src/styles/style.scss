@@ -1,0 +1,20 @@
+@import './helpers/font';
+@import './helpers/variables';
+@import './helpers/mixins';
+
+@import '~bootstrap/scss/bootstrap';
+@import './base/base';
+@import './modules/modules';
+
+.react-datepicker-wrapper {
+    .form-control {
+        cursor: pointer;
+    }
+}
+.pointer{
+    cursor: pointer;
+}
+
+.h-100 {
+    height: 100vh !important;
+}

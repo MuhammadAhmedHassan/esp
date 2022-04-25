@@ -1,0 +1,116 @@
+@import "../../../styles/helpers/helpers";
+
+ .gdprSetting {
+    border: 1px solid $color__border;
+	padding: 20px;
+	background: $color__background-white;
+	margin: 10px;
+	@include box-shadow-card;
+
+    .check {
+        margin: 15px 0px;
+    }
+
+    .icon {
+        margin-left: 5px;
+    }
+
+    .editBtn {
+        text-align: center;
+        width: 70%;
+        min-width: 68px;
+        background-color: transparent;
+        border-width: 1px;
+    }
+
+    .addConsentBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .createConsentBtn {
+        display: flex;
+        justify-content: end;
+    }
+
+    .heading {
+        margin: 20px;
+        font-weight: bold;
+        word-spacing: 20px;
+        font-size: larger;
+        width: 100%;
+    }
+
+    .tableContent {
+        text-align: left;
+        // min-width: 100px;
+    }
+
+    .th {
+        min-width: 100px;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    h6 {
+        font-weight: bold;
+        margin: 0px 22px;
+        text-align: right;
+        @media(max-width: 576px){
+            &{
+                margin: 0;
+                text-align: left;
+            }
+        }
+    }
+
+    .textField {
+        margin: -16px;
+        width: 50%;
+        @media(max-width: 576px){
+            &{
+                margin: 16px 0 0px;
+                width: 100%;
+            }
+        }
+    }
+
+    .table-responsive{
+        table {
+          thead {
+            th{
+              min-width: 100px;
+              text-align: left;
+              white-space: nowrap;
+              &:first-child{
+                min-width: 200px;
+                text-align: left;
+              }
+            }
+      td{
+      text-transform: capitalize;
+          margin-bottom: 0;
+      }
+          }
+        }
+      }
+
+    .colAlign {
+        align-items: center;
+    }
+    .consent_message {
+        position: relative;
+        margin-bottom: 16px;
+        .validate__message{
+            position: absolute;
+            left: 0;
+            bottom: -30px;  
+        }
+    }
+    .edit__btn{
+        min-width: 48px;
+        padding: 0;
+        text-align: left;
+    }
+ }

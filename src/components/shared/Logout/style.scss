@@ -1,0 +1,86 @@
+@import '../../styles/helpers/helpers';
+
+.login {
+	background: url('../../Images/Background/login_background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	overflow: auto;
+}
+.logo {
+	width: 189px;
+}
+.login-form {
+	max-width: 600px;
+	height: auto;
+	background: $color__background-white;
+	box-shadow: 0px 25px 41px 16px $color__box-shadow;
+	margin: 0 auto;
+
+	form {
+		margin-bottom: 0;
+	}
+}
+.language-selector {
+	position: relative;
+	text-align-last: end;
+
+	select {
+		border: 0px;
+		font-weight: $fontWeightBold;
+		color: $color__secondary-dark;
+		background-color: transparent;
+	}
+}
+.dropup {
+	position: relative;
+	text-align-last: end;
+}
+.form-group {
+	position: relative;
+	small {
+		position: absolute;
+		right: 0;
+		display: none;
+	}
+
+	.form-label {
+		color: $color__text-dark;
+	}
+	
+	.form-input {
+		width: 100%;
+		height: 49px;
+		background: $color__light;
+		border: none;
+		color: $color__text-dark;
+		padding: 10px;
+	}
+
+    &.error {
+        small {
+            display: inline;
+        }
+        .form-input {
+            border: 1px solid $color__Danger;
+        }
+    }
+}
+
+
+.login-button {
+	width: 100%;
+	
+    h3 {
+		color: $color__background-white;
+		margin-bottom: 0;
+	}
+}
+
+a.forgot-password {
+	font-size: $fontSizeLabel;
+	line-height: 17px;
+	color: $color__secondary-dark;
+}
+

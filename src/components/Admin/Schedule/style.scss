@@ -1,0 +1,12 @@
+@import "../../../styles/helpers/helpers";
+
+.css-1pcexqc-container {
+    background: $color__background-white;
+    padding: 4px;
+    border: 1px solid $color__background-grey;
+    .css-ik6y5r {
+        background: $color__light;
+        border: 1px solid $color__background-grey;
+        z-index: 99999;
+    }
+}

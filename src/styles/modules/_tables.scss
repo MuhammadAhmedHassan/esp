@@ -1,0 +1,26 @@
+.table-responsive {
+  padding: 10px;
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: $color__background-light-blue;
+  }
+  table {
+    position: relative;
+    font-size: $fontSizeTable;
+    thead {
+      th {
+        position: sticky;
+        top: -1px;
+        min-width: 200px;
+        background-color: $color__background-white;
+        border-bottom: 1px solid $color__border;
+        box-shadow: 0px 1px 0px 0px $color__border;
+        color: $color__secondary-dark;
+
+        &:first-child {
+          min-width: 100px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

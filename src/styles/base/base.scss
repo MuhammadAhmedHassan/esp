@@ -1,0 +1,243 @@
+@import "reset";
+@import "grid";
+@import "typography";
+
+// Breakpoints
+// ------------------------- Source: http://blog.scur.pl/2012/06/variable-media-queries-less-css/
+$highdensity: "only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+"only screen and (min--moz-device-pixel-ratio: 1.5)",
+"only screen and (-o-min-device-pixel-ratio: 3/2)",
+"only screen and (min-device-pixel-ratio: 1.5)";
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-weight: $fontWeightNormal
+}
+
+// custom-control style
+
+.custom-control {
+    padding-left: 1rem;
+}
+
+.custom-control .custom-control-input,
+.custom-control .custom-control-label {
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    background: $color__background-white;
+    border: 2px solid $color__primary;
+    border-radius: 0px;
+    top: 0.1rem;
+}
+
+.custom-checkbox .custom-control-label::after {
+    top: 0.1rem;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: $color__primary;
+    background-color: $color__primary;
+}
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    background-color: rgba(0, 194, 240, 25%);
+    border-color: rgba(0, 194, 240, 25%);
+}
+
+.validtionMessage {
+    color: $color__text-red-danger;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+// Switch
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 20px;
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked+.switch-slider {
+            border: 1px solid #00c2f0;
+        }
+
+        &:checked+.switch-slider:before {
+            background-color: #00c2f0;
+        }
+
+        &:focus+.switch-slider {
+            box-shadow: 0 0 1px #2196f3;
+        }
+
+        &:checked+.switch-slider:before {
+            -webkit-transform: translateX(22px);
+            -ms-transform: translateX(22px);
+            transform: translateX(22px);
+        }
+    }
+
+    &-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        border: 1px solid #c4c4c4;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 34px;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 2px;
+            bottom: 2px;
+            background-color: #c4c4c4;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+// Button style
+
+
+
+
+.input-group-append {
+    margin-left: 1px!important;
+}
+
+button.noClass {
+    border: none;
+    background: none;
+}
+
+.mandatory {
+    color: $color__Danger;
+}
+
+
+.redStar { color: $color__text-red; margin-left: -3px; font-size: 17px; }
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #efefef !important;
+    opacity: 1;
+}
+
+.dangerText {
+    color: $color__Danger
+}
+
+// breadcrumb style
+    
+ol.breadcrumb {
+    padding: 1rem;
+    background-color: $color__background-white;
+    border-radius: 0;
+    padding-bottom: 19px;
+
+    li {
+        span {
+            text-transform: capitalize;
+        }
+    }
+}
+
+.react-multiselect-dropdown {
+
+    &::after {
+        width: 6px;
+        height: 6px;
+        border-right: 2px solid #fff;
+        border-top: 2px solid #fff;
+        position: absolute;
+        top: 36%;
+        right: 35px;
+        transform: rotate(134deg);
+        content: "";
+        z-index: 1;
+
+    }
+
+    .dropdown-toggle.btn.btn-primary {
+        padding:0 25% 0 0;
+
+        &::after {
+            content: none;
+        }
+    }
+}
+
+.UnauthorizedMessage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+}
+
+// common for all date-pickers
+input[type="date"].form-control, 
+input[type="time"].form-control, 
+input[type="datetime-local"].form-control, 
+input[type="month"].form-control {
+    text-transform: uppercase;
+}
+
+
+
+  
+.no-style-btn {
+    border: none!important;  
+    outline: none;
+    background: none!important;
+    box-shadow: none !important;
+    margin: 0!important;
+    padding: 0!important;
+    min-width: auto!important;
+    &:focus {
+      border: none;  
+      outline: none;
+    }
+    &:hover {
+        border: none;  
+        outline: none;
+      }
+  }
+
+
+.card_layout {
+    .tilte {
+        margin: 7px 0 2px 9px;
+    }
+    label.custom-control-label {
+        padding-left: 15px;
+    }
+    .custom-control-input {
+        z-index: 1;
+        left: -11px;
+        width: 100%;
+    }
+}
+
+   

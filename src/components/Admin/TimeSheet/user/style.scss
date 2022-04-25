@@ -1,0 +1,51 @@
+@import "../../../../styles/helpers/helpers";
+
+.date-wrapper {
+  padding: 56px 20px 72px 1.5rem;
+  background: $color__background-white;
+  border-radius: 4px;
+  @include box-shadow-card;
+
+  .content-wrapper {
+    label {
+      width: 100%;
+      position: relative;
+
+      svg {
+        position: absolute;
+        right: 1.5rem;
+        top: 12px;
+      }
+
+      .react-datepicker-wrapper {
+        width: 95%;
+
+        .react-datepicker__input-container {
+          border: none;
+
+          input {
+            padding: 1.4rem 0.75rem;
+          }
+        }
+      }
+    }
+
+    .date-name {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 20px;
+      color: $color__dark;
+      margin-bottom: 8px;
+    }
+
+    div {
+      .action-btn {
+        border: 1.3px solid $color__primary;
+        border-radius: 5px;
+        padding: 6px;
+        cursor: pointer;
+      }
+    }
+  }
+}

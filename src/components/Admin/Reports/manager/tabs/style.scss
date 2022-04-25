@@ -1,0 +1,47 @@
+@import "../../../../../styles/helpers/helpers";
+
+.tab-container {
+    padding: 40px;
+    .nav-tabs {
+        border-bottom: none;
+        .nav-item {
+            background: $color__background-white;
+            padding: 1em 3.5em;
+            box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 8px 8px 0px 0px;
+            border: none;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: $color__dark;
+            margin-right: 20px;
+            margin: 10px;
+        }
+        .active {
+            background: $color__primary !important;
+            color: $color__text-white !important;
+        }
+        .active-tab {
+            background: $color__primary;
+        }
+    }
+    @mixin actionbutton {
+        background: $color__text-white;
+        border: 1.2px solid $color__primary;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .actionbtn {
+        height: fit-content;
+        .action-btn-primary {
+            @include actionbutton;
+            padding: 10px 15px;
+        }
+        .action-btn-secondary {
+            @include actionbutton;
+            padding: 10px 10px;
+        }
+    }
+}

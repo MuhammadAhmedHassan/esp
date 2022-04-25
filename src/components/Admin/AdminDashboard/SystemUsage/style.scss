@@ -1,0 +1,120 @@
+@import '../../../../styles/helpers/helpers';
+
+.coverage {
+
+    // bootstrap override 
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .form-control {
+        border-radius: 0px;
+        font-size: $fontSizeLabel;
+        margin-bottom: 10px;
+        height: 49px;
+        background: $color__light;
+    }
+
+    .reloadBtn {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: $color__background-dark;
+            display: flex;
+            margin-right: 20px;
+            justify-content: end;
+        }
+
+    .linkLine {
+        text-decoration: underline;
+    }    
+
+    .activityStyle {
+        margin-left: 30px;
+        color: $color__primary;
+
+        .btn {
+            margin: 10px 0px;
+            max-width: 110px;
+            min-width: 10px;
+        }
+    }
+
+    .title {
+        display: flex;
+        justify-content: right;
+        margin-right: 10px;
+    }
+
+    .pageDiv {
+        margin: 15px;
+    }
+    
+    .btn {
+
+        height: 49px;
+        margin-top: 31px;
+    }    
+    
+    .arrowBtn{
+        border: none;
+        background-color: transparent
+    }
+
+    .table-responsive {
+        @include box-shadow-card;
+        box-shadow: none;
+
+        table {
+            position: relative;
+            font-size: $fontSizeTable;
+
+            thead {
+                th {
+                    position: sticky;
+                    top: -1px;
+                    min-width: 150px;
+                    background-color: $color__background-white;
+                    border-bottom: 1px solid $color__border;
+                    box-shadow: 0px 1px 0px 0px $color__border;
+                    color: $color__secondary-dark;
+
+                    &:first-child {
+                        min-width: 70px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            tr {
+                td {
+                    vertical-align: middle;
+                    text-align: center;
+            
+                    .profileImage{
+                        img {
+                        height: 75px;
+                       width: 100px;
+                        }
+                    }
+
+                    .btn {
+                        min-width: 100px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        &.btn-outline-secondary {
+                            color: $color__background-dark;
+                            border: 1px solid $color__background-dark;
+
+                            &:hover{
+                                color: $color__text-white;
+                                border: 1px solid $color__secondary-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

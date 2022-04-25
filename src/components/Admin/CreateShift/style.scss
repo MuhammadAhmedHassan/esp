@@ -1,0 +1,557 @@
+@import "../../../styles/helpers/helpers";
+// @import clockIcon from '../../../Images/Icons/clock.svg';
+
+.create-shift {
+    .card_layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}
+
+.shift-template {
+
+    .form-group {
+        span {
+            color: $color__background-black;
+            font-weight: 400;
+        }
+
+    }
+
+    .switch.form-label-custom.form-label {
+        color: $color__background-black;
+        font-weight: 400;
+    }
+
+    .custom-checkbox {
+        top: 3px;
+        left: 9px;
+    }
+
+    .switch {
+        margin: 0 20px 0 55px;
+    }
+
+    .slider.round {
+        top: 4px;
+        margin-right: 1.1rem;
+    }
+
+    .react-datepicker__input-container .form-control {
+        margin-bottom: 0;
+    }
+
+    // .custom-with-datepicker {
+    //     max-width: 198px;
+    // }
+    .openshift {
+        margin-left: -25px;
+    }
+
+    .groupIcon {
+        margin-top: 40px;
+    }
+
+    .action {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    input.clock.form-control {
+        background-image: url(../../../Images/Icons/clock.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position: 95%;
+    }
+
+    // bootstrap override
+    select {
+        &.form-control {
+            padding: 10px;
+            min-height: 49px;
+        }
+    }
+
+    .form-control {
+        border-radius: 0px;
+        font-size: $fontSizeNavigation;
+        background: $color__light;
+        padding: 1.4rem 0.6rem;
+        border: none;
+        color: $color__dark;
+
+        &:disabled {
+            background-color: $color__light;
+        }
+    }
+
+    .react-datepicker-popper {
+        width: 100%;
+
+        .react-datepicker--time-only {
+            width: 100%;
+
+            .react-datepicker__time-container {
+                width: 100%;
+
+                .react-datepicker__time-box {
+                    width: 100%;
+                    margin: 0;
+
+                    .react-datepicker__time-list {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .react-datepicker-wrapper {
+        width: 100%;
+
+        .form-control {
+            background: $color__light url(../../../Images/Icons/calendar.svg);
+            background-size: 19px;
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+            color: $color__secondary-dark;
+            cursor: pointer;
+            min-height: 49px;
+        }
+
+        .startTime {
+            background-image: url(../../../Images/Icons/icon_dropdown.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-color: $color__light;
+            border: none;
+            background-position: 95% 50%;
+            padding: 10px;
+        }
+    }
+
+    .btn-small {
+        img {
+            min-width: 20px;
+            min-height: 20px;
+            max-width: 20px;
+            max-height: 20px;
+        }
+    }
+
+    .custom-control {
+        padding-left: 1.5rem;
+    }
+
+    .weekly {
+        .btn-group-toggle {
+            &.btn-group {
+                .btn {
+                    min-width: 51px;
+                    padding: 10px 5px;
+                    line-height: normal;
+
+                    &.disabled {
+                        &:hover {
+                            background: inherit;
+                            color: $color__text-label;
+                            cursor: not-allowed;
+                            border: 2px solid $color__text-label;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .monthly {
+        max-width: 330px;
+
+        .btn-group-toggle {
+            &.btn-group {
+                display: inline;
+
+                .btn {
+                    min-width: 32px;
+                    max-width: 32px;
+                    height: 32px;
+                    line-height: 10px;
+                    margin: 10px 2px 10px 10px !important;
+                    padding: 10px 0;
+
+                    &:nth-child(1),
+                    &:nth-child(8),
+                    &:nth-child(15),
+                    &:nth-child(22),
+                    &:nth-child(29) {
+
+                        margin-left: initial;
+
+                        @media only screen and (min-width: $tablet) {
+                            margin-left: 0 !important;
+                        }
+                    }
+
+                    &.disabled {
+                        &:hover {
+                            background: inherit;
+                            color: $color__text-label;
+                            cursor: not-allowed;
+                            border: 2px solid $color__text-label;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-group-toggle {
+        &.btn-group {
+            .btn {
+                margin: 0 5px;
+
+                &.btn-outline- {
+                    &secondary {
+                        box-shadow: none;
+
+                        &:hover,
+                        &:focus {
+                            background: $color__border-grey;
+                            color: #fff;
+                        }
+
+
+                        &:not(:disabled):not(.disabled):active,
+                        &:not(:disabled):not(.disabled).active,
+                        &.active {
+                            background: $color__btn-sucess;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .preview-calendar {
+        max-width: 350px;
+
+        .fc {
+            &-scroller {
+                overflow: hidden !important;
+
+                th {
+                    vertical-align: middle;
+                }
+            }
+
+            &-col-header {
+                width: 100% !important;
+            }
+
+            &-daygrid-body {
+                width: 100% !important;
+            }
+
+            &-toolbar {
+                margin-bottom: 0 !important;
+                background: $color__active;
+                padding: 5px 15px;
+
+                &-title {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $color__background-white;
+                }
+            }
+
+            &-view-harness {
+                background-color: $color__light;
+                height: 350px !important;
+            }
+
+            &-theme-standard {
+                td {
+                    border: none;
+                    height: 50px;
+                }
+
+                th {
+                    border: none;
+                    height: 50px;
+                }
+            }
+
+            &-daygrid-day-top {
+                padding: 7px 1px;
+            }
+
+            &-scrollgrid-sync-table {
+                height: 290px;
+            }
+
+            &-daygrid-day-number {
+                color: $color__background-white;
+                z-index: 9;
+            }
+
+            .fc-daygrid-day-top {
+                position: relative;
+                z-index: 10;
+            }
+
+            .fc-daygrid-day-events {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                left: 20%;
+
+                a {
+                    height: 40px;
+                    background-color: $color__btn-sucess;
+                    border: none;
+                }
+            }
+
+            .text-white {
+                .fc-daygrid-day-top {
+                    a {
+                        color: $color__background-black;
+                    }
+                }
+            }
+
+            &-button-primary {
+                background: transparent;
+                border: 0;
+                box-shadow: none !important;
+                text-transform: capitalize;
+                padding: 0;
+                margin-left: 5px;
+
+                &:disabled {
+                    display: none;
+                }
+
+                &:focus {
+                    background: transparent;
+                    border: 0;
+                    box-shadow: none;
+                }
+            }
+
+            .fc-col-header-cell-cushion {
+                color: $color__dark;
+                font-size: 1rem;
+                font-weight: normal;
+            }
+
+            .fc-daygrid-day-number {
+                color: $color__dark;
+                font-size: 0.85rem;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .form-control.min-height-pad {
+        min-height: 49px;
+        padding-left: 20px;
+
+        &::placeholder {
+            /* Firefox, Chrome, Opera */
+            color: $color__dark;
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $color__dark;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $color__dark;
+        }
+    }
+
+    .custom-control-label::after {
+        content: "✓";
+        color: $color__background-white;
+        top: 11%;
+        left: -22px;
+    }
+
+    .btn {
+        line-height: 28px;
+    }
+
+    .btn-dark {
+        background-color: $color__secondary-dark;
+
+        &:focus,
+        &:hover {
+            background-color: $color__secondary-dark;
+            border-color: $color__secondary-dark;
+        }
+    }
+
+    .btn-dark:not(:disabled):not(.disabled):active,
+    .btn-dark:not(:disabled):not(.disabled).active,
+    .show>.btn-dark.dropdown-toggle {
+        background-color: $color__secondary-dark;
+        border-color: $color__secondary-dark;
+    }
+
+    .switch {
+        width: auto;
+    }
+}
+
+
+@media only screen and (max-width: $landscapeTablet) {
+
+    .ml-lg-95 {
+        margin-left: 95px;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    .shift-template {
+        .justify-content-start-small {
+            justify-content: flex-start !important;
+            margin-left: 2rem;
+        }
+
+        form {
+            .form-group {
+                &.max-w-100 {
+                    max-width: 100%;
+                }
+
+                &.padding-x-small {
+                    padding: 0 15px !important;
+
+                    input {
+                        max-width: 100%;
+                    }
+                }
+
+                &.width-100 {
+                    width: 100%;
+                }
+            }
+        }
+
+        .btn-adjust {
+            width: 100%;
+
+            .btn-group {
+                width: 100%;
+
+                .btn-dark {
+                    margin: 0 !important;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .preview-calendar {
+            left: -8px;
+        }
+
+        .weekly {
+            .btn-group-toggle {
+                display: block;
+                margin: 0 auto;
+                width: 85%;
+
+                label {
+                    margin: 0 10px 10px 10px !important;
+                }
+            }
+        }
+
+
+        .monthly {
+            max-width: 288px;
+            margin: 0 auto;
+
+            .btn-group-toggle.btn-group .btn {
+                min-width: 28px;
+            }
+        }
+
+        &.create-shift .card_layout {
+            height: auto;
+            padding: 0 30px;
+        }
+
+    }
+}
+
+.card.cardShift {
+    background-color: $color__background-light-blue;
+    padding: 15px;
+}
+
+.weekly {
+    .weeklyCard {
+        display: inline-block;
+
+        label {
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+.searchButtonST {
+    margin-top: 27px;
+    text-align: center;
+
+    @media only screen and (min-width: $tablet) {
+        text-align: left;
+    }
+}
+
+.shift-dropdwon-image{
+    cursor: pointer;
+}
+
+.addUserIcon {
+    width: 30px;
+    cursor: pointer;
+    margin: 0 0 12px 0;
+}
+
+.userAdded {
+    background: $color__primary;
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin: 2px 0 0 0;
+    display: inline-block;
+    color: $color__background-white !important;
+    font-size: 13px;
+    margin: 3px;
+
+    img {
+        background-color: $color__background-white;
+        padding: 3px;
+        border-radius: 20px;
+        margin: -2px 0 0 9px;
+        width: 19px;
+        cursor: pointer;
+    }
+}
+
+.addUser {
+    width: 30px;
+    cursor: pointer;
+    display: block;
+    margin: 9px 0 0 0;
+}

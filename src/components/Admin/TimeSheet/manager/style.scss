@@ -1,0 +1,27 @@
+@import "../../../../styles/helpers/helpers";
+
+.manager {
+  background: $color__text-white;
+  border-radius: 4px;
+  // @include box-shadow-card;
+  .nav-tabs {
+    border-bottom: none;
+    display: none;
+    a {
+      font-style: normal;
+      font-weight: $fontWeightSemiBold;
+      font-size: $fontSizeParagraph;
+      line-height: $font__line-Label;
+      color: $color__background-dark;
+      padding-left: 0px;
+    }
+    .nav-link {
+      border: none;
+    }
+    .nav-link.active {
+      color: $color__primary;
+      text-decoration-line: underline;
+      text-underline-offset: 4px;
+    }
+  }
+}

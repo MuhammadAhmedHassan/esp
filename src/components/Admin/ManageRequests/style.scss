@@ -1,0 +1,101 @@
+@import '../../../styles/helpers/helpers';
+
+.manageLeave { 
+
+    .rmdp-container  {
+     width: 100%;
+    }
+    
+    .b-deselect {
+        align-items: center;
+        display: inline-flex;
+        border: none;
+        cursor: pointer;
+        height: 12px;
+        width: 12px;
+        justify-content: center;
+        border-radius: 0;
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        transform: none;
+        padding: 0;
+        line-height: 5px;
+        background: #000;
+        min-width: 20px;
+    }
+
+    margin-bottom: 10px; 
+    input {
+        border-radius: 0px;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        background: #efefef;
+        height: 49px;
+        width: 100%;
+    }
+
+    .Active.btn.btn-secondary {
+        background-color: $color__active;
+        min-width: 150px; width: 100%;
+        
+    }
+
+    .closed.btn.btn-secondary {
+        background-color: $color__close;
+        min-width: 150px; width: 100%;
+        color: $color__text-black;
+       
+    }
+     
+    button.btn.btn-warning {
+      background-color: $color__btn-warning;
+      margin: 0px 5px !important;
+    }
+
+    button.btn.btn-danger {
+        background-color: $color__btn-danger;
+        margin: 0px 5px !important;
+    }
+
+    button.btn.btn-success {
+        background-color: $color__btn-sucess;
+        margin: 0px 5px !important;
+    }
+
+    button.btn   { 
+        padding: .5rem .7rem; color: #fff;
+        margin: 0px 5px;
+     }
+     button   { 
+        width: auto; 
+        min-width: 150px;
+        padding: .5rem .7rem; color: #fff;
+        margin: 0px 5px;
+     }
+
+     
+}
+
+.mt20 { margin-top: 20px; }
+
+.p0 { padding: 0px !important;  }
+
+ul.detail_lb {
+    list-style-type: none;
+    padding: 0;
+    box-shadow: 0px 3px 22px rgba(0,0,0,.15);
+    padding: 5px 0;
+    border-radius: 5px;
+
+    li {
+        display: inline-block;
+        line-height: 50px;
+        padding:0 18px;
+        font-size: 12px;
+        border-right: 1px solid #ddd;
+
+        &:last-child { border-right: none;}
+    }
+}

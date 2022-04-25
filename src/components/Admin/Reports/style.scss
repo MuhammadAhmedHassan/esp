@@ -1,0 +1,69 @@
+@import "../../../styles/helpers/helpers";
+@import "../../../styles/helpers/variables";
+
+.reports-table-container {
+  width: 100%;
+  overflow: auto;
+  background: $color__background-light-skyblue;
+  .reports-table {
+    border: 1px solid $color__border;
+    overflow: auto;
+    th,
+    td {
+      font-family: Lato;
+      font-size: $lineHeightS;
+      font-style: $fontStyleNormal;
+      line-height: $lineHeight20;
+      letter-spacing: 0em;
+      text-align: left;
+      white-space: nowrap;
+      padding: 18px 10px;
+      border: 1px solid  $color__border;
+      div {
+        font-family: Lato;
+        font-size: $lineHeightS;
+        font-style: $fontStyleNormal;
+        line-height: $lineHeight20;
+        letter-spacing: 0em;
+      }
+    }
+    th {
+      color: $color__secondary-dark;
+    }
+    td {
+      font-weight: $fontWeightNormal;
+    }
+    .no-border {
+      border: none;
+    }
+    .primary-color {
+      color: $color__primary;
+      div {
+        color: $color__primary;
+      }
+    }
+    .table-row-headers {
+      // border-width: 1px 0px;
+      &:first-of-type {
+        div {
+          // min-width: 300px;
+        }
+
+      }
+    }
+    .simple-headers {
+      font-weight: normal;
+      color: initial;
+    }
+  }
+}
+
+.startTime {
+  background-image: url(../../../Images/Icons/icon_dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: $color__light;
+  border: none;
+  background-position: 95% 50%;
+  padding: 10px;
+}

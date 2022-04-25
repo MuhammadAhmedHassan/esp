@@ -1,0 +1,117 @@
+@import "../../../../styles/helpers/helpers";
+
+.HoursTableContainer {
+  background: #00c2f00d;
+  overflow-x: scroll;
+
+  @mixin tableLable {
+    font-family: $fontFamilyBody;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-bottom: none;
+    border-left: none;
+
+    thead {
+      tr {
+        th {
+          @include tableLable;
+          font-weight: bold;
+          text-transform: capitalize;
+          color: $color__secondary-dark;
+        }
+        .borderhead {
+          border-right: 1px solid #dee2e6;
+        }
+        .borderprimary {
+          min-width: 350;
+          border-bottom: "none";
+        }
+        .bordersecondary {
+          min-width: 150;
+          text-align: "center";
+          border: "none";
+          border-top: 1px solid #dee2e6;
+        }
+        .borderTernary {
+          min-width: 100;
+          white-space: "nowrap";
+          border-bottom: "none";
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        @include tableLable;
+        font-weight: normal;
+        color: $color__background-dark;
+        text-align: center;
+      }
+      td:last-child {
+        border-right: none;
+      }
+      .exceptions-lable {
+        border-radius: 5px;
+        padding: 7px 24px;
+        color: $color__text-white;
+      }
+      .exceptions-secondday {
+        background-color: #dbab30;
+      }
+      .exceptions-thirdday {
+        background-color: #7da739;
+      }
+      .exceptions-fourthday {
+        background-color: #437dd3;
+      }
+      .exceptions-fifthday {
+        background-color: #e86958;
+      }
+      .exceptions-firstday {
+        background-color: $color__text-red-danger;
+      }
+    }
+  }
+  .lable {
+    @include tableLable;
+    font-weight: normal;
+    color: $color__primary;
+  }
+  .shiftLable {
+    min-width: 350px ;
+  }
+  .finalCalculated {
+    vertical-align: middle ;
+  }
+  .totaltd {
+    min-width: 84px ;
+    border-bottom: none ;
+    border-top: none ;
+  }
+  .daytd {
+    white-space: nowrap ;
+    min-width: 84px ;
+    border-bottom: none ;
+    padding-top: 30px ;
+    border-right: none ;
+  }
+  .trHeight {
+    height: 82px ;
+  }
+  .marginClass {
+    margin-top: -90px;
+  }
+  .tableborder {
+    border-bottom: hidden ;
+    // border-left: hidden ;
+  }
+}
+
+
+

@@ -1,0 +1,170 @@
+@import "../helpers/helpers";
+.form-control.custom-checkbox:disabled,
+.form-control.custom-checkbox[readonly] {
+  opacity: 0;
+}
+.form-control:disabled,
+.form-control[readonly] {
+  cursor: not-allowed;
+}
+.btn-primary.disabled,
+.btn:disabled, button:disabled {
+  cursor: not-allowed;
+}
+.react-datepicker-wrapper .form-control:disabled,
+.react-datepicker-wrapper .form-control[readonly] {
+  cursor: not-allowed;
+}
+.switch {
+  position: relative;
+  margin: 21px 0 0 45px;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.custom-checkbox {
+  cursor: pointer;
+  // position: absolute;
+  z-index: 99;
+  border: 0;
+  top: 50%;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  background-color: $color__background-grey;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 0.13rem;
+    background-color: $color__background-white;
+    transition: 0.4s;
+  }
+}
+
+input:checked + .slider {
+  background-color: $color__primary;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $color__primary;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  width: 35px;
+  height: 16px;
+  top: 50%;
+}
+
+.slider.round {
+  &:before {
+    border-radius: 50%;
+  }
+}
+.tw-toggle {
+  display: inline-block;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid $color__background-grey;
+  width: 38px;
+  height: 17px;
+  margin: 0 1.2rem;
+}
+.form-label-custom {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+}
+.tw-toggle {
+  label {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    text-align: center;
+    visibility: hidden;
+    line-height: 0;
+  }
+  input {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+  span {
+    height: 12px;
+    width: 11px;
+    line-height: 21px;
+    border-radius: 50%;
+    background: $color__background-white;
+    display: block;
+    position: absolute;
+    left: 22px;
+    top: 0.5px;
+    transition: all 0.3s ease-in-out;
+  }
+  input[value="-1"]:checked ~ span {
+    background: $color__text-red-danger;
+    left: 2px;
+    color: $color__background-white;
+  }
+  input[value="1"]:checked ~ span {
+    background: $color__background-green;
+    left: 22px;
+  }
+  input[value="false"]:checked + label,
+  .tw-toggle input[value="true"]:checked + label {
+    color: $color__background-white;
+  }
+  input[value="0"]:checked ~ span {
+    background: $color__background-grey;
+    left: 12px;
+  }
+  input[value="-1"]:checked + label {
+    color: $color__background-white;
+  }
+}
+
+.multiselect-container {
+  > div {
+    background: $color__light;
+    border: none;
+    padding: 0.61rem;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

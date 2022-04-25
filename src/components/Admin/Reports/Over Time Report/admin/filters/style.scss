@@ -1,0 +1,16 @@
+@import "../../../../../../styles/helpers/helpers";
+
+.row {
+  
+  .react-datepicker-wrapper {
+    width: 100%;
+    .react-datepicker__input-container {
+      input {
+        color: $color__background-dark;
+      }
+    }
+  }
+  .search-btn {
+    margin-bottom: 6px;
+  }
+}

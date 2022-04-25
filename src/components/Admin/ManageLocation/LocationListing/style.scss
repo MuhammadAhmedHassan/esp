@@ -1,0 +1,26 @@
+@import '../../../../styles/helpers/helpers';
+
+.w-auto{
+    min-width: auto !important;
+}
+span.mandatory {
+    color: #ff5c5c;
+    font-size: 0.75rem;
+}
+.location-listing {
+    .switch {
+        margin: 0;
+    }
+
+    .table-responsive {
+        table {
+            thead {
+               th{
+                &:first-child {
+                    text-align: left;
+                }
+               }
+            }
+        }
+    }
+}

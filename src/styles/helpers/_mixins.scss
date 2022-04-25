@@ -1,0 +1,23 @@
+// BOX SHADOW
+@mixin box-shadow-card($x: 0px 4px, $y: 48px, $blur: -1px, $color: rgba(0,0,0,0.11)) {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow:    $x $y $blur $color;
+    box-shadow:         $x $y $blur $color;
+}
+
+// BOX SHADOW Timer
+@mixin box-shadow-timer($x: 0px 4px, $y: 5px, $blur: -1px, $color: rgba(0,0,0,0.11)) {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow:    $x $y $blur $color;
+    box-shadow:         $x $y $blur $color;
+}
+
+// Transitions
+
+@mixin transition($args: all .1s ease) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+  }

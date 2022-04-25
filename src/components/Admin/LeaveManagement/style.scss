@@ -1,0 +1,479 @@
+@import "../../../styles/helpers/helpers";
+
+.leave_details {
+
+	// padding: 10px;
+	// .card_layout {
+	// 	padding: 0;
+	// 	// margin-bottom: 0;
+	// }
+	.leavedetails {
+		// padding: 10px;
+		// margin-left: 20px !important;
+	}
+
+	.label_lightgray {
+		 color: #b9b9b9;
+	}
+
+	.attachfile {
+		margin-left: -13px;
+	}
+
+	.leaveBox {
+		// margin: 10px;
+		padding: 10px;
+		background-color: #add8e65c;
+		border-radius: 5px;
+		width:100%;
+		@media only screen and (min-width: 840px)  {
+			width: 100%;
+		}
+	}
+
+	.timeLinesection {
+		border:none;	
+		@media only screen and (min-width: 575px)  {
+			border-right: 1px solid grey;
+		}
+	}
+
+	.statusText {
+		margin: 10px 0 0 0;
+		text-align: initial;
+		@media only screen and (min-width: 575px)  {
+			margin: 10px;
+			text-align: right;	
+		}
+	}
+
+	.details {
+		font-size: 16px;
+		font-weight: 600;
+		padding: 15px;
+	}
+
+	
+
+	.detailsDiv {
+		clear: both;
+
+		label {
+		    width: 100%;
+			margin-bottom: 5px;
+			@media only screen and (min-width: 575px)  {
+				width: 50%;
+			}
+		}
+
+		span {
+			float: left;
+			width: 100%;
+			margin-bottom: 15px;
+			@media only screen and (min-width: 575px)  {
+				float: right;
+			    width: 50%;
+				margin-bottom: 5px;
+				
+				
+			}
+		}
+	}
+
+	.detailslabel {
+		float: left;
+		width: 50%;
+	}
+
+}
+
+.leaveManagement {
+	h2 {
+		font-weight: 700;
+		color: $color__text-dark;
+		margin-bottom: 30px;
+		font-size: $fontSizeHeading-2;
+		line-height: $font__line-heading-2;
+	}
+
+	.react-datepicker-popper {
+		z-index: 9;
+	}
+
+	// .cancel {
+	// 	min-width: 206px;
+	// 	border: 1px solid gray;
+	// }
+
+	.custom-control-label {
+		margin-left: 9px;
+	}
+
+	.charsTooTip {
+		text-align: end;
+		font-size: 0.8rem;
+	}
+
+	.text-danger {
+		color: $color__Danger !important;
+		/* position: absolute; */
+		top: 70px;
+		line-height: 16px;
+		margin: -6px 0 11px 0;
+		font-size: 14px;
+	}
+
+	.openEndedText {
+		color: $color__text-red;
+	}
+
+	.choosefile {
+		max-width: 1024px;
+	}
+
+	.attachFile {
+		background: $color__background-white;
+		padding: 10px;
+		border: 1px solid $color__border-grey;
+
+		.choose_file {
+			font-size: 0.8rem;
+		}
+	}
+
+	.form-control {
+		border-radius: 0px;
+		font-size: $fontSizeLabel;
+		margin-bottom: 20px;
+		background: $color__background-input;
+		border: none;
+		height: 49px;
+	}
+
+	.custom-control {
+		// padding-left: 1.5rem;
+	}
+
+	textarea {
+		min-height: 150px;
+	}
+     
+	.balText {
+		line-height: 40px;
+	}
+
+	.customCheck {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.form-check {
+		padding-left: 0px;
+		font-size: $fontSizeLabel;
+	}
+
+	.para {
+		font-size: 16px;
+	}
+
+	.react-datepicker-wrapper {
+		width: 100%;
+	}
+
+	.danger {
+		color: $color__Danger;
+	}
+
+	.btnOuter {
+		.btn {
+			@media (max-width: 767px){
+				width: 100%;
+				margin: 5px;
+			}
+		}
+	}
+
+}
+
+.balancecard {
+	.card {
+		border: none;
+
+		.body {
+			margin: 15px 0;
+		}
+
+	}
+
+	margin-bottom: 30px;
+	@include box-shadow-card;
+	border: none !important;
+	padding-bottom: 10px;
+
+	.balance_card_box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		min-height: 100px;
+
+		a {
+			color: #00c2f0;
+			font-size: 15px;
+			font-weight: 400;
+			display: block;
+			text-align: center;
+		}
+
+		span {
+			font-size: 13px;
+			font-weight: 400;
+			margin: 5px 0 20px;
+		}
+	}
+
+	.days_left {
+		font-size: 40px;
+		font-weight: 400;
+		line-height: 31px;
+		margin-bottom: 0;
+		color: #333;
+	}
+
+	.progressBar {
+		padding: 10px 16px 5px;
+		position: relative;
+
+		span {
+			color: $color__dark !important;
+			top: -18px;
+			left: 16px;
+			font-size: 14px;
+			position: absolute;
+		}
+
+		div {
+			max-width: 100%;
+		}
+	}
+
+	.grantTitle {
+		text-align: left;
+		@media only screen and (min-width: 990px)  {
+			text-align: right;	
+		}
+	}
+
+	p {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 16px;
+	}
+}
+
+.appliedLeaveOuterCard {
+	border: 1px solid #ddd;
+	padding: 20px;
+	background: #fff;
+	margin: 10px;
+	@include box-shadow-card;
+
+	.appliedLeaveCard {
+		h5 {
+			color: $color__text-label;
+			margin-bottom: 0;
+			font-size: 14px;
+		}
+
+		.viewDetails {
+			margin-top: 50px;
+			border: 1px solid #ddd;
+			padding: 10px;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		label {
+			color: $color__text-label;
+			margin-bottom: 0;
+
+			&.label_ap {
+				width: 40%;
+				margin-bottom: 0;
+			}
+		}
+
+		.withdraw {
+			min-width: 143px;
+		}
+
+		.accordion {
+			.card {
+				border: none;
+			}
+
+			.card-body {
+				border: 1px solid #ddd;
+			}
+
+			.card-header {
+				background: transparent;
+			}
+
+			.btn.btn-link {
+				background: $color__primary;
+				color: #efefef;
+				float: right;
+				text-decoration: none;
+				padding: 10px 30px;
+				min-width: auto;
+			}
+		}
+	}
+}
+
+.btn {
+	margin: 0px 10px;
+}
+
+.react-datepicker__input-container {
+	input {
+		cursor: pointer;
+	}
+
+	h2 {
+		font-size: 19px;
+		line-height: 35px;
+		font-weight: 700;
+		color: $color__text-dark;
+		margin-bottom: 30px;
+	}
+
+	.text-danger {
+		color: #dc3545 !important;
+		/* position: absolute; */
+		top: 70px;
+		line-height: 16px;
+		margin: -15px 0 11px 0;
+		font-size: 13px;
+	}
+
+	.attachFile {
+		background: #f1f1f1;
+		padding: 10px;
+		border: 1px solid #9999;
+	}
+
+	.form-control {
+		border-radius: 0px;
+		font-size: $fontSizeLabel;
+		// margin-bottom: 20px;
+		background: $color__light;
+		height: 49px;
+	}
+
+	textarea {
+		min-height: 82px;
+	}
+
+	.customCheck {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.form-check {
+		padding-left: 0px;
+	}
+
+	.para {
+		font-size: 16px;
+	}
+
+	.react-datepicker-wrapper {
+		width: 100%;
+	}
+
+
+	.form-control {
+		background: $color__light url(../../../Images/Icons/calendar.svg);
+		background-size: 19px;
+		background-repeat: no-repeat;
+		background-position: 95% 50%;
+		cursor: pointer;
+	}
+
+}
+
+.leaveManagement .react-datepicker-wrapper .form-control {
+
+	table {
+		.table-header {
+			font-size: $rootFontSize;
+
+			th {
+				min-width: 100px;
+			}
+		}
+	}
+
+	.detail_lb {
+		li {
+			font-weight: $fontWeightSemiBold;
+		}
+	}
+}
+
+.react-datepicker__tab-loop {
+	.react-datepicker-popper{
+		z-index: 9999;
+	  }
+}
+
+.btn.btn-outline-info.applyLeaveBtn {
+    background: none;
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-direction: row;
+    min-width: 45px;
+    border-radius: 9px;
+
+	&:hover {
+		background-color: $color__background-white;
+		box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	}
+}
+
+.btn-align-r {
+	margin-bottom: 5px; margin-top: 15px;text-align: center;
+
+	@media only screen and (min-width: 768px)  {
+		text-align: right; 
+
+	}
+}
+
+.btn-align-l {
+	margin-bottom: 5px; margin-top: 15px;text-align: center;
+
+	@media only screen and (min-width: 768px)  {
+		text-align: left;
+	}
+}
+
+.breakWord   {word-break: break-word; }
+
+.leaveManagement  {
+	.leaveBalanceDrop { display: inline; max-width: 150px; margin-right: 15px;  }
+}
+
+.graphContainer {
+	width: 100%; height: 100%; overflow-x: auto;
+}

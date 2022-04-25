@@ -1,0 +1,101 @@
+@import '../../../../styles/helpers/helpers';
+
+.empCoverage {
+
+    // bootstrap override 
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    .form-control {
+        border-radius: 0px;
+        font-size: $fontSizeLabel;
+        margin-bottom: 10px;
+        background: $color__light;
+    }
+
+    .coverageHeading {
+        background-color: transparent;
+        color: $color__primary;
+        font-size: $fontSizeHeading-3;
+        border: 0;
+    }
+
+    .reloadBtn {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: $color__background-dark;
+            display: flex;
+            margin-right: 20px;
+            justify-content: end;
+        }
+        
+    .dayBtn {
+        min-width: 50px;
+        max-width: 80px;
+        padding: 8px;        
+    }  
+    
+    .arrowBtn {
+        min-width: 30px;
+            border: none;
+            background-color: transparent
+    }  
+    
+    .table-responsive {
+        // max-height: 300px;
+        @include box-shadow-card;
+        box-shadow: none;
+
+        table {
+            position: relative;
+            font-size: $fontSizeTable;
+            text-align: center;
+
+            thead {
+                th {
+                    position: sticky;
+                    top: -1px;
+                    min-width: 150px;
+                    background-color: $color__background-white;
+                    border-bottom: 1px solid $color__border;
+                    box-shadow: 0px 1px 0px 0px $color__border;
+                    color: $color__secondary-dark;
+
+                    &:first-child {
+                        min-width: 70px;
+                    }
+                }
+            }
+
+            tr {
+                td {
+                    vertical-align: middle;
+                    
+                    .profileImage{
+                        img {
+                        height: 75px;
+                       width: 75px;
+                        }
+                    }
+
+                    .btn {
+                        min-width: 100px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        &.btn-outline-secondary {
+                            color: $color__background-dark;
+                            border: 1px solid $color__background-dark;
+
+                            &:hover{
+                                color: $color__text-white;
+                                border: 1px solid $color__secondary-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

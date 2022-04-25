@@ -1,0 +1,418 @@
+@import "../../../styles/helpers/helpers";
+
+.open-shift-icon-panel,
+.emp-shift-icon,
+.notes-panel {
+  background-image: url("../../../Images/Icons/open_shift_scheduler.svg");
+  background-position: 0 30px;
+  background-repeat: no-repeat;
+  padding: 40px;
+  line-height: 85px;
+  background-size: 35px;
+  color: $color__dark;
+  font-weight: 700;
+}
+
+.emp-shift-icon {
+  background-image: url("../../../Images/Icons/Employee_Shift.svg");
+  background-position: 0 30px;
+  background-repeat: no-repeat;
+  padding: 40px;
+  line-height: 85px;
+  background-size: 35px;
+  color: $color__dark;
+  font-weight: 700;
+}
+
+.notes-panel {
+  background: none;
+}
+
+.show-flag {
+  &::after {
+    content: "\2691";
+    color: $color__border-link;
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+}
+
+.scheduler-content-table {
+  tr:first-child {
+    td {
+      cursor: pointer;
+    }
+  }
+}
+
+.scheduler-bg {
+  tr:first-child {
+    td {
+      &::before {
+        content: "\270E";
+        transform: rotate(90deg);
+        position: absolute;
+      }
+    }
+  }
+}
+
+.resource-view {
+  border: none;
+
+  >div {
+    overflow: hidden !important;
+    margin: 0 !important;
+
+    >div {
+      overflow: hidden !important;
+    }
+
+    thead {
+      display: none;
+    }
+  }
+}
+
+.resource-table {
+  background-color: $color__background-white;
+
+  th {
+    display: none;
+  }
+
+  tbody {
+    tr {
+      border: none;
+
+      td {
+        border: none;
+      }
+    }
+  }
+}
+
+.ant-row-flex-space-between {
+  display: block;
+
+  @media only screen and (min-width: $tablet) {
+    width: 83%;
+  }
+
+  button,
+  div {
+    float: left;
+  }
+
+  div:last-child {
+    float: right;
+  }
+}
+
+.scheduler-view {
+  max-width: 95%;
+
+  @media only screen and (min-width: $tablet) {
+    max-width: 90%;
+  }
+}
+
+.round-all {
+  border-radius: 0;
+}
+
+#RBS-Scheduler-root a.timeline-event {
+  .event-item {
+    color: $color__dark;
+    font-weight: normal;
+    margin-left: 9px;
+    width: calc(100% - 6px);
+  }
+}
+
+.three-dot-wrapper {
+  top: 0;
+  left: 90%;
+}
+
+.dot-ele {
+  width: 0;
+  padding: 0;
+  height: 0;
+  top: 0;
+  position: absolute;
+  top: 15px;
+
+  .dropdown-menu {
+    top: -26px !important;
+    left: 13px !important;
+
+    &.show{
+      height: fit-content;
+    }
+  }
+}
+
+.dot-ele>button {
+  width: 0%;
+  min-width: 0;
+  height: 0;
+  padding: 0%;
+  border: none;
+  background-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.dot-ele>button:after {
+  content: "\2807";
+  font-size: 35px;
+  color: $color__background-black;
+  border: none;
+}
+
+.dot-ele>button:focus {
+  box-shadow: none !important;
+}
+
+.dropdown-menu-align-right {
+  margin-top: 10px;
+  left: 4px;
+}
+
+.list-group-item {
+  border: none !important;
+  padding-left: 0 !important;
+}
+
+.ant-popover {
+  width: 320px;
+}
+
+
+.event-item{
+  .icon{
+    position: absolute;
+    left: -1px;
+    top: 14px;
+  }
+}
+
+
+.anticon-left,
+.anticon-right {
+  font-size: 1.5rem;
+
+  svg {
+    fill: $color__page-link;
+  }
+}
+
+.header2-text-label {
+  color: $color__dark;
+  font-weight: 700;
+  position: relative;
+  top: 2px;
+}
+
+#today {
+  cursor: pointer;
+  color: $color__dark;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 0 20px;
+  border: none;
+  background-color: transparent;
+  left: -22px;
+  top: 72px;
+  z-index: 1;
+
+  &:hover {
+    color: $color__dark;
+  }
+}
+
+.see-schdule {
+  // button {
+  //     max-width: 100%;
+  //     min-width: 100%;
+  //     font-weight: normal;
+  // }
+
+  .dropdown-toggle.btn.btn-primary {
+    background: $color__background-primary;
+    padding: 0;
+  }
+
+  .max-w-230 {
+    max-width: 230px;
+  }
+
+  .react-multiselect {
+    button {
+      background-color: $color__primary;
+      color: $color__text-white;
+      width: 100%;
+      line-height: 36px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      text-align: center;
+      font-weight: 700;
+      min-width: auto;
+    }
+
+    &::before {
+      content: " ";
+      height: 28px;
+      position: absolute;
+      z-index: 999;
+      color: #fff;
+      right: 25%;
+      transform: rotate(180deg);
+      background-color: #fff;
+      height: 57px;
+      width: 1px;
+      top: 0;
+    }
+  }
+}
+
+.ant-radio-button-wrapper {
+  margin: 4px;
+
+  @media only screen and (min-width: $tablet) {
+    margin: 0px;
+  }
+}
+
+.scheduler {
+  .ant-radio-group.ant-radio-group-outline.ant-radio-group-default {
+    @media only screen and (min-width: $tablet) {
+      margin-left: 5px;
+    }
+  }
+}
+
+.scheduler-bg-table {
+  .header3-text {
+    line-height: 13px !important;
+  }
+
+  &.full-length {
+    tbody {
+      tr {
+        td:not(:first-child) {
+          display: none;
+          width: 0 !important;
+        }
+
+        td:first-child {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+.event-container {
+  &.full-length {
+    .timeline-event {
+      left: 0 !important;
+      width: 100% !important;
+    }
+  }
+}
+
+.react-multiselect-primary {
+  .dropdown-toggle {
+    &.btn {
+      background-color: $color__primary;
+      color: $color__text-white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $color__primary !important;
+        color: $color__text-white !important;
+      }
+    }
+  }
+}
+
+.hide-note-icon {
+  #RBS-Scheduler-root {
+    .scheduler-bg {
+      tr:first-child {
+        td {
+          &::before {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
+
+.schedulerCard {
+  overflow: auto;
+}
+
+.schedulerButton {
+  border-radius: 5px;
+  margin: 0;
+  width: 100%;
+
+  .dropdown-toggle {
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.schedulerButton.btn.btn-primary {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  min-width: auto;
+}
+
+.ant-radio-group.ant-radio-group-outline.ant-radio-group-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  flex-flow: wrap;
+
+  @media only screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0px;
+    flex-flow: row;
+    margin-left: 25px;
+  }
+}
+
+
+.ant-row-flex.ant-row-flex-space-between.ant-row-flex-middle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: $tablet) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}
+
+.drop-down-div {
+  .dropdown-menu {
+    max-height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 0px;
+    width: 100%;
+  }
+}

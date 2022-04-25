@@ -1,0 +1,43 @@
+@import "../../../styles/helpers/helpers";
+
+.employee-punchlog {
+
+   label { text-align: left;
+   
+    @media only screen and (min-width: 600px)  {
+      text-align: right;
+    }
+  
+  }
+
+  .card_layout {
+    padding: 0;
+    margin-bottom: 0;
+    .source-input {
+      max-width: 120px;
+      height: 30px;
+    }
+    .rmdp-input {
+      border-radius: 0px;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+      background: #efefef;
+      height: 49px;
+      width: 100%;
+    }
+    .rmdp-calendar {
+      background-color: $color__background-white;
+    }
+  }
+
+  .rmdp-container {
+    width: 100%;
+}
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #1fcdf80f;
+  }
+  .table-header {
+    color: $color__secondary-dark;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../../styles/helpers/helpers';
+
+.main-skeleton {
+  background-color: $color__background-white;
+  div {
+    p {
+      padding: 20px 10px;
+
+      span {
+        .react-loading-skeleton {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

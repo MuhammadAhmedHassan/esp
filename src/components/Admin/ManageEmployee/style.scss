@@ -1,0 +1,89 @@
+@import '../../../styles/helpers/helpers';
+
+.manage-employee {
+
+    // bootstrap override 
+
+    .endButton {
+        padding: 20px 0;
+    }   
+    
+    .form-control {
+        border-radius: 0px;
+        font-size: $fontSizeLabel;
+        margin-bottom: 10px;
+        background: $color__light;
+    }
+
+    .manageEmpSearch {
+        max-width: 150px;
+        min-height: 49px;
+        height: 100%;
+        max-height: 49px;
+        line-height: 11px;
+        min-height: 36px;
+        margin-top: 5px;
+    }
+
+    .table-responsive {
+        // max-height: 300px;
+        @include box-shadow-card;
+
+        table {
+            position: relative;
+            font-size: $fontSizeTable;
+            text-align: center;
+
+            thead {
+                th {
+                    position: sticky;
+                    top: -1px;
+                    min-width: 150px;
+                    background-color: $color__background-white;
+                    border-bottom: 1px solid $color__border;
+                    box-shadow: 0px 1px 0px 0px $color__border;
+                    color: $color__secondary-dark;
+
+                    &:first-child {
+                        min-width: 70px;
+                    }
+                }
+            }
+
+            tr {
+                td {
+                    vertical-align: middle;
+
+                    .impersonation{
+                        display: block;
+                        text-align: center;
+                        margin: auto;
+                        height: 38px;
+                        margin-top: 12px;
+                        border: 1px solid $color__secondary-dark;
+                        padding: 5px 37px;
+                        background: $color__background-white;
+                        border-radius: 1px;
+                        max-width: 100px;
+                    }
+
+                    .btn {
+                        min-width: 100px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+
+                        &.btn-outline-secondary {
+                            color: $color__background-dark;
+                            border: 1px solid $color__secondary-dark;
+
+                            &:hover{
+                                color: $color__text-white;
+                                border: 1px solid $color__secondary-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

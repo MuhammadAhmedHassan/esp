@@ -1,0 +1,31 @@
+.dropdown-wrapper {
+  padding-right: 4%;
+  .dropdown-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #333333;
+    padding-bottom: 8px;
+  }
+  .dropdown {
+    .dropdown-toggle:empty::after {
+      margin-left: 80%;
+      color: #333333;
+    }
+    .dropdown-menu {
+      min-width: 12rem;
+      transform: translate3d(6px, 38px, 0px) !important;
+    }
+    button {
+      background-color: #efefef;
+      margin-left: 0px !important;
+    }
+    button:hover {
+      background-color: #efefef;
+    }
+    button:active {
+      background-color: #efefef;
+    }
+  }
+}

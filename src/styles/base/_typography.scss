@@ -1,0 +1,70 @@
+// Google Fonts
+
+
+html, body {
+    font-family: $fontFamilyBody;
+    font-weight: $fontWeightlight;
+    font-size: $fontSizeParagraph;
+    line-height: $font__line-body;
+    color: $color__dark ;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $fontFamilyHeading;
+    font-weight: $fontWeightSemiBold ;
+    color: $color__secondary-dark;
+}
+
+h1 {
+    font-size: $fontSizeHeading-1;
+    line-height: $font__line-heading-1;
+}
+
+h2 {
+    font-size: $fontSizeHeading-2 ;
+    line-height:$font__line-heading-2 ; 
+}
+
+h3 {
+    font-size: $fontSizeHeading-3 ;
+    line-height: $font__line-heading-3; 
+}
+
+p {
+    font-family: $fontFamilyBody;
+    font-size: $fontSizeParagraph;
+    line-height: $font__line-heading-3; 
+
+    
+}
+p a {
+    font-family:$fontFamilyBody;
+    font-size: $fontSizeParagraph;
+    line-height: $font__line-heading-3;
+    color: $color__primary;
+}
+
+a{
+    font-size: $fontSizeNavigation ;
+    font-weight:  $fontWeightSemiBold;
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+label {
+    font-weight: $fontWeightBold;
+    font-size: $fontSizeLabel;
+    line-height: $font__line-Label;
+}
+
+.font-sm{
+    font-size: $lineHeightS;
+}
+
+
+/* common css end*/

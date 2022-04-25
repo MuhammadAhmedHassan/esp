@@ -1,0 +1,143 @@
+@import '../../../../styles/helpers/helpers';
+
+.coverage {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .employeeCode {
+        color: $color__background-white; 
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .arrowBtn {
+        min-width: 30px;
+        border: none;
+        background-color: transparent
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .dataAlign {
+        width: 100%;
+    }
+
+    .form-control {
+        border-radius: 0px;
+        font-size: $fontSizeLabel;
+        margin-bottom: 10px;
+        height: 49px;
+    }
+
+    .reloadBtn {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: $color__background-dark;
+            display: flex;
+            margin-right: 20px;
+            justify-content: end;
+            border: 0px;
+        }
+        
+    .dayBtn {
+        min-width: 50px;
+    }  
+    
+    .arrowBtn {
+        min-width: 50px;
+        background-color:transparent;
+        border-radius: 2px;
+    }  
+
+    .nav-tabs {
+        text-align: center;
+        font-weight: bold;
+        .nav-link.active {
+            background-color: $color__primary;
+            color: $color__background-white;
+        }
+    }
+
+    .nav-link {
+        color: $color__background-black;
+        max-width: 450px;
+        width: 100%;
+        margin-left: 10px;
+        height: 60px;
+    }
+
+    .btn {
+        width: 100%;
+        min-width: 100%;
+        margin: 9px 5px;
+    }
+
+    .dropHeight {
+        height: 49px;
+    }
+    
+    .table-responsive {
+
+        @include box-shadow-card;
+
+        table {
+            position: relative;
+            font-size: $fontSizeTable;
+            text-align: center;
+
+            thead {
+                th {
+                    position: sticky;
+                    top: -1px;
+                    min-width: 150px;
+                    background-color: $color__background-white;
+                    border-bottom: 1px solid $color__border;
+                    box-shadow: 0px 1px 0px 0px $color__border;
+                    color: $color__secondary-dark;
+
+                    &:first-child {
+                        min-width: 70px;
+                    }
+                }
+            }
+
+            tr {
+                td {
+                    vertical-align: middle;
+                    
+                    .profileImage{
+                        img {
+                        height: 75px;
+                       width: 100px;
+                        }
+                    }
+
+                    .btn {
+                        min-width: 100px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        &.btn-outline-secondary {
+                            color: $color__background-dark;
+                            border: 1px solid $color__background-dark;
+
+                            &:hover{
+                                color: $color__text-white;
+                                border: 1px solid $color__secondary-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

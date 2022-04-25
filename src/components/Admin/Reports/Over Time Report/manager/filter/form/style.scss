@@ -1,0 +1,23 @@
+@import "../../../../../../../styles/helpers/helpers";
+
+.manager-container {
+    .form-row {
+        .form-group {
+            .form-control {
+                background-color: $color__light;
+                // padding: 1.375rem 0.75rem;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 20px;
+                border: none;
+                color: $color__dark;
+            }
+            
+        }
+    }
+    .dropDownClass {
+        height:49px;
+    }
+}

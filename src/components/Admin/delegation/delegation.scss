@@ -1,0 +1,60 @@
+@import "../../../styles/helpers/helpers";
+.delegation{
+    .filter__primary__btn
+    {
+        margin-top: 13px;
+        background-color: $color__primary;
+        font-size: 17px;
+        padding: 5px;
+        font-weight: 700;
+        min-width: 100%;
+    }
+    .filter__primary__outline__btn{
+        margin-top: 13px;
+        color:$color__primary;
+        font-size: 17px;
+        padding: 5px;
+        font-weight: 700;
+        border: 1px solid $color__primary;
+        min-width: 100%;
+    }
+    .table thead th{
+        color: $color__primary;
+        font-size: 17px;
+        font-weight: 700;
+        border-bottom-width: 0;
+    }
+    td{
+        font-weight: 400;
+        color: $color__dark;
+    }
+    .table-striped tbody tr:nth-of-type(odd){
+        background-color: $color__primary__bg;
+    }
+    .heading{
+        font-size: 25px;
+        color: $color__dark;
+    }
+    .nav-tabs {
+        border-bottom: none;
+        a {
+          font-style: normal;
+          font-weight: $fontWeightSemiBold;
+          font-size: $fontSizeParagraph;
+          line-height: $font__line-Label;
+          color: $color__background-dark;
+        }
+        .nav-link {
+          border: none;
+        }
+        .nav-link.active {
+          color: $color__primary;
+          text-decoration-line: underline;
+          text-underline-offset: 4px;
+        }
+      }
+      .endButton {
+        padding: 20px 0;
+      }
+    
+}

@@ -1,0 +1,72 @@
+@import "../../../../../styles/helpers/helpers";
+
+.swap-time {
+  .card_layout {
+    padding: 0;
+    margin-bottom: 0;
+    .swaptime-btn {
+      padding-top: 20px;
+      margin-bottom: -17px;
+      .myrequest {
+        border-radius: 5px 5px 0 0;
+        text-align: center;
+      }
+    }
+  }
+  .search-label {
+    margin-left: 63px;
+    font-size: $fontSizeParagraph;
+    margin-top: 12px;
+  }
+
+  .action-icon {
+    margin: 5px;
+  }
+  // bootstrap override
+
+  .table-responsive {
+    max-height: calc(100vh - 200px);
+    padding: 10px;
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: #00c2f00f;
+    }
+
+    .table-striped tbody tr:nth-of-type(even) {
+      background-color: $color__background-table;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+      background-color: $color__background-white;
+  }
+
+  .table-striped tbody tr {
+      td {
+          border-bottom: 1px solid $color__border-table;
+      }
+  }
+
+    table {
+      position: relative;
+      font-size: $fontSizeTable;
+      thead {
+        th {
+          position: sticky;
+          top: -1px;
+          min-width: 200px;
+          box-shadow: 0px 1px 0px 0px $color__border;
+          color: $color__secondary-dark;
+          background-color: $color__background-table;
+          border-top: 1px solid $color__border-table;
+          border-bottom: none;
+
+          &:first-child {
+              min-width: 70px;
+              text-align: center;
+          }
+        }
+
+        
+      }
+    }
+  }
+}

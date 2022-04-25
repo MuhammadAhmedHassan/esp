@@ -1,0 +1,368 @@
+@import "../../../styles/helpers/helpers";
+
+.employee-dashboard {
+  .card_layout {
+    .table-responsive {
+      
+
+      thead {
+        th {
+          border-bottom: 1px solid $color__border;
+          box-shadow: 0px 1px 0px 0px $color__border;
+          color: $color__secondary-dark;
+
+          &:first-child {
+            width: 150px;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .cardBox {
+      @include box-shadow-card;
+      border-radius: 15px;
+      align-items: stretch;
+      flex-flow: column nowrap;
+      display: flex;
+      height: 100%;
+      border: none;
+      margin-bottom: 15px;
+      position: relative;
+
+      &_cardTitle {
+        text-align: center;
+        border-radius: 15px 15px 0 0;
+        padding: 5px;
+        font-weight: bold;
+        color: $color__secondary-dark;
+        line-height: 40px;
+        background-color: $color__title-bg-light;
+      }
+
+
+      .card_border {
+        border: 1px solid $color__border;
+      }
+
+      .myScheduleinfo {
+        display: flex;
+        justify-content: space-between;
+        line-height: 15px;
+      }
+
+      .shiftTitle {
+        padding: 15px;
+        font-weight: $fontWeightBold;
+      }
+
+      .shiftHeader {
+        background-color: $color__background-dark-blue;
+      }
+
+      .shiftIcon {
+        float: left;
+        width: 66px;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+       
+      }
+
+      .timerTitle {
+        text-align: center;
+        padding-top: 50px;
+      }
+ 
+      .timer {
+        display: flex;
+        padding: 10px;
+        min-width: 292px;
+        ul {
+          margin: 8px;
+          padding: 0;
+          min-width: 60px;
+          max-width: 80px;
+          width: 100%;
+          display: flex;
+          margin-right: 2px;
+          justify-content: center;
+          position: relative;
+          font-weight: bold;
+
+          &::before {
+            position: absolute;
+            content: ":";
+            top: 15px;
+            right: -9px;
+            font-size: 33px;
+            font-weight: 300;
+          }
+
+          &:last-child {
+            &::before{
+              display: none;
+            }
+          }
+
+          @media only screen and (min-width: $tablet ) {
+            width: 80px;
+          }
+
+          @media only screen and (min-width: $desktop) {
+            width: 76px;
+          }
+          @media only screen and (min-width: $wide) {
+            width: 85px;
+          }
+        }
+
+        .timer-list li {
+          @include box-shadow-timer;
+          border-radius: 5px;
+          border: 1px solid $color__border;
+          list-style-type: none;
+          min-height: 66px;
+          width: 44px;
+          font-size: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          
+
+          @media only screen and (min-width: $tablet ) {
+
+
+            min-height: 66px;
+            width: 100%;
+            font-size: 22px;
+
+          }
+        }
+      }
+    
+
+      .clockInBtn {
+        align-items: center;
+        min-width: 150px;
+      }
+
+      .punchList {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .profileCardImg {
+        text-align: center;
+
+        .profilePic {
+          border-radius: 50%;
+          width: 140px;
+          height: 140px;
+        }
+      }
+
+      .editProfileBtn {
+        border-radius: 4px;
+        min-width: 120px;
+        padding: 0;
+        min-height: auto;
+        margin: 10px 0;
+      }
+
+
+
+      .tableShift {
+        max-height: 474px;
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+        ;
+      }
+
+      .label-name span {
+        font-weight: $fontWeightSemiBold;
+      }
+
+      .reqOverTimeBtn {
+        min-width: 100px;
+        min-height: 40px;
+      }
+
+      .submittedBtn {
+        max-width: 250px;
+        min-height: 45px;
+        border-radius: 10px 10px 0 0;
+
+        &.receivedBtn {
+          border: 1px solid $color__border-primary;
+          font-weight: $fontWeightSemiBold;
+          color: $color__text-black;
+        }
+      }
+
+      .assignedBtn {
+        min-width: 150px;
+        min-height: 45px;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  }
+
+  .shiftDescRequest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .shiftIconRequest {
+      display: flex;
+      justify-content: flex-end;
+      width: 61px;
+      margin-left: 3px;
+  }
+}
+
+.openShiftRequest {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   .openShiftIcons{
+    display: flex;
+    justify-content: flex-end;
+    width: 61px;
+    margin-left: 3px;
+   }
+}
+
+  .seeAllNewBtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 70px;
+  }
+
+  .shiftDesc {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    min-height: 34px;
+  }
+
+  .myScheduleTable {
+    
+    table {
+      td {
+        padding: 7px 11px;
+      }
+    }
+  }
+
+  .requestOverTimeDesc {
+    padding: 0 15px;
+
+    .reason-textarea {
+      max-height: 300px; height: 100%;
+    }
+
+
+}
+
+.swapShiftCardDesc{
+  padding: 0 15px;
+  .reason-textarea {
+    max-height: 300px; height: 100%;
+  }
+}
+
+  .requestTabs {
+    border-radius: 15px;
+    height: 100%;
+    border: none;
+    margin-bottom: 0;
+    position: relative;
+    height: 100%;
+    box-shadow: 0px 4px 48px -1px $card__box-shadow;
+
+    .nav-tabs {
+      border: none;
+
+      a {
+        color: $color__background-dark;
+      }
+
+      .nav-item.nav-link.active {
+        background-color: $color__title-bg-light;
+        color: $color__secondary-dark;
+        border: none;
+      }
+
+      .nav-item.nav-link {
+        padding: 16px 0;
+        background-color: $color__border;
+        width: 47.5%;
+        text-align: center;
+        line-height: initial;
+        margin: 3px;
+        border-radius: 10px 11px 0 0;
+        margin-top: 6px;
+        
+        @media only screen and (min-width: $desktop)  {
+          padding: 16px 0;
+          width: 49%;
+          background-color: $color__border;
+          }
+
+        @media only screen and (min-width: $tablet)  {
+          padding: 16px 0;
+        width: 48%;
+        background-color: $color__border;
+        }
+
+
+        &:active {
+          background-color: $color__title-bg-light;
+        }
+
+        &:focus {
+          background-color: $color__title-bg-light;
+        }
+      }
+    }
+
+    .request-card {
+      margin: 0px;
+      padding: 0;
+    }
+
+    .tab-content {
+      height: auto;
+      border-radius: 0 0 15px 15px;
+      padding-top: 8px;
+    }
+  }
+
+  .leaveInfo {
+    height: 100%;
+  }
+
+  .openShiftCard {
+   
+    height: 100%;
+   
+  }
+}
+
+.datepickerPlacholder {
+  input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: rgb(104, 36, 36);
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "dd-mm-yyyy";
+  }
+}

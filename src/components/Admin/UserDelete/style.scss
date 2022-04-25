@@ -1,0 +1,61 @@
+@import "../../../styles/helpers/helpers";
+
+ .userDelete {
+    border: 1px solid $color__border;
+	padding: 20px;
+	background: $color__background-white;
+	margin: 10px;
+	@include box-shadow-card;
+
+    .check {
+        margin: 30px 0px;
+    }
+
+    .icon {
+        margin-left: 5px;
+    }
+
+    .editBtn {
+        text-align: center;
+        width: 70%;
+        background-color: transparent;
+        border-width: 1px;
+    }
+
+    .addConsentBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heading {
+        margin: 20px;
+        font-weight: bold;
+        word-spacing: 20px;
+        font-size: larger;
+        width: 100%;
+    }
+
+    h6 {
+        font-weight: bold;
+        margin: 0px 22px;
+        text-align: right;
+    }
+
+    .textField {
+        margin: -16px;
+        width: 50%;
+    }
+
+    .colAlign {
+        align-items: center;
+    }
+    .consent_message {
+        position: relative;
+        margin-bottom: 16px;
+        .validate__message{
+            position: absolute;
+            left: 0;
+            bottom: -30px;  
+        }
+    }
+ }

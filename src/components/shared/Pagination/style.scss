@@ -1,0 +1,62 @@
+@import '../../../styles/helpers/helpers';
+
+
+.refresh {cursor: pointer;}
+
+.pagination-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    .pagination { 
+        justify-content: center;
+        margin-bottom: 20px;
+        @media only screen and (min-width: $landscapeTablet)  {
+            margin-bottom: 0;
+            justify-content: left;
+        }
+        
+        .page-item {
+            &.active {
+                
+                
+                .page-link {
+                    padding: 15px;
+                    color: $color__text-white;
+                    background-color: $color__secondary-dark;
+                }
+                
+            }
+            
+            .page-link {
+                padding: 15px;
+                color: $color__secondary-dark;
+            }
+        }
+    }
+
+    .pagination_result {
+       text-align: center;
+        @media only screen and (min-width: $landscapeTablet)  {
+            text-align: right;
+        }
+    }
+
+    .numberPage {
+        margin-bottom: 15px;
+    }
+
+    .responsive_pageSize {
+        text-align: center;
+        margin-bottom: 15px;
+        label {
+            margin: 0;
+        }
+        @media only screen and (min-width: $landscapeTablet)  {
+            text-align: left; 
+            margin-bottom: 0;
+        }
+    }
+}
+

@@ -1,0 +1,162 @@
+@import "../../../../styles/helpers/helpers";
+
+.timesheet {
+    // margin-left: 20px;
+    // margin-top: 20px;
+    background: $color__text-white;
+    border-radius: 4px;
+    // @include box-shadow-card;
+    // @media only screen and (min-width: $landscapeTablet) {
+    //     margin-left: 62px;
+    //     margin-top: 62px;
+    // }
+}
+.timesheet-content {
+    white-space: nowrap;
+    font-style: normal;
+    font-size: $fontSizeTable;
+    line-height: $lineHeight20;
+    text-transform: capitalize;
+    .table-responsive-xl {
+        overflow-x: scroll;
+        .table {
+            overflow-x: scroll;
+        }
+    }
+
+    .table-responsive-xl::-webkit-scrollbar {
+        width: 0px;
+        height: 10px;
+    }
+
+    .table-responsive-xl::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px #e4e4e4;
+        background: #e4e4e4;
+    }
+
+    .table-responsive-xl::-webkit-scrollbar-thumb {
+        background-color: $color__primary;
+        border-radius: 3px;
+        border: 3px solid $color__primary;
+    }
+
+    thead {
+        background: $color__background-light-skyblue;
+        th {
+            font-weight: bold;
+            color: $color__secondary-dark;
+            padding: 0.75rem 2.3rem 0.75rem 2.3rem;
+        }
+    }
+    tbody {
+        .selectcheckbox {
+            input {
+                width: 28px;
+                height: 28px;
+                border: 1.6px solid $color__boder-light-black;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+        }
+        tr:nth-child(even) {
+            background-color: $color__background-light-skyblue;
+        }
+        .status {
+            padding: 5px 10px;
+            // background: $color__text-red-danger;
+            border-radius: 5px;
+            text-transform: capitalize;
+            font-style: normal;
+            font-weight: $fontWeightMedium;
+            color: $color__text-white;
+        }
+        td {
+            font-weight: normal;
+            color: $color__dark;
+            vertical-align: middle;
+            padding: 0.75rem 2.3rem 0.75rem 2.3rem;
+        }
+    }
+    .approve {
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 50px;
+        .approve-btn {
+            background-color: $color__primary;
+            border-radius: 10px;
+            color: $color__background-white;
+            padding: 14px 62px;
+            border: none;
+            outline: none;
+        }
+    }
+}
+// .pagination-wrapper {
+//     display: flex;
+//     // margin-left: 20px;
+//     justify-content: space-between;
+//     margin-top: 0px;
+//     padding: 10px 0px 5px 50px;
+//     background: $color__text-white;
+//     @media only screen and (min-width: $tablet) {
+//         display: flex;
+//         // margin-left: 20px;
+//         justify-content: space-between;
+//     }
+//     .pagination-wrapper {
+//         .pagination_block {
+//             width: 25%;
+//         }
+//         .responsive_pageSize {
+//             width: 25%;
+//         }
+//         .pagination_result {
+//             width: 25%;
+//         }
+//     }
+// }
+
+
+.timeSheetTable {
+    th {
+        &:first-child {
+            display: none;
+        }
+    }
+}
+
+.shift-request-tooltip {
+    position: relative;
+    display: inline-block;
+
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 300px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 13px 0;
+        position: absolute;
+        line-height: 25px;
+        left: -190px;
+        right: 53px;
+        top: 40px;
+        z-index: 99999;
+        white-space: normal;
+        padding: 7px 13px;
+        cursor: pointer;
+      }
+}
+
+  
+.shift-request-tooltip:hover {
+  .tooltiptext {
+    visibility: visible;
+  }
+}
+
+.employee-time-sheet-date{
+    width: 100px !important;
+}

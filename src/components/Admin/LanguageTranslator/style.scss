@@ -1,0 +1,37 @@
+@import "../../../styles/helpers/helpers";
+
+.languageTranslator {
+  .card_layout {
+    .publishedIcon {
+      text-align: center;
+    }
+    .languageTranslator {
+      display: flex;
+      justify-content: center;
+      &_action {
+        width: 23px;
+        height: 28px;
+        line-height: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &--editIcon {
+          width: 23px;
+          height: 28px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .imageUpload {
+      &_inputFile {
+        display: none;
+      }
+
+      &_icon {
+        cursor: pointer;
+      }
+    }
+  }
+}

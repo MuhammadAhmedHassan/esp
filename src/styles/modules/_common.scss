@@ -1,0 +1,23 @@
+.no-right-padding {
+    padding: 0 0 0 5px;
+}
+.no-left-padding {
+    padding: 0 15px 0 0 !important;
+}
+
+.spinner-wrapper {
+    position: absolute;
+    z-index: 999;
+    background-color: $color__background-white;
+    width: 84%;
+    height: 100%;
+    opacity: 0.5;
+    .spinner-border {
+        left: 50%;
+        top: 50%;
+        position: relative;
+    }
+}
+.hidden {
+    display: none !important;
+}
